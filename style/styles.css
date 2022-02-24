@@ -22,8 +22,6 @@ body {
 
 div.grilla header{
     grid-area: header;
-    grid-column-start: 1/4;
-    grid-row-start: 1/2;
     background-color:rgb(1, 116, 192);
 }
 
@@ -55,8 +53,6 @@ header nav ul li a i {
 
 footer{
     grid-area: footer;
-    grid-column-start: 1/4;
-    grid-row-start: 5/6;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,8 +88,6 @@ footer span {
 
 div.grilla main{
     grid-area: main;
-    grid-column-start: 1/3;
-    grid-row-start: 2/5;
 }
 
 main h1 {
