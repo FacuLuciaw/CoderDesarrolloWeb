@@ -20,33 +20,33 @@ body {
 
 /*HEADER INICIO*/ 
 
-div.grilla header{
+div.grilla header {
     grid-area: header;
     background-color:rgb(1, 116, 192);
 }
 
-header nav ul {
-    list-style-type: none;
+header nav.navbar navbar-expand-lg navbar-light bg-light {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-header nav ul li a {
+header nav {
     text-decoration: none;
     color:rgb(255, 255, 255); 
     font-size: 20px;
     font-weight: 400;
 }
 
-header nav ul li a img {
+header nav.navbar navbar-expand-lg navbar-light bg-light ul li a {
     height: 60px;
     width: 60px;
 }
 
-header nav ul li a i {
+header nav.navbarnavbar-expand-lg navbar-light bg-light a i {
     font-size: 45px;
     color:rgb(255, 255, 255); 
+    display: flex;
 }
 
 /*FOOTER*/
@@ -108,6 +108,10 @@ main.inicio p {
     background-color:rgb(1, 192, 192);
     font-size: 20px;
     padding: 15px;
+}
+
+main.inicio div.principal img {
+    border-radius: 15px;
 }
 
 /*MAIN SOBRE NOSOTROS*/
@@ -224,8 +228,9 @@ main.noticias section {
 main.noticias section img {
     padding-bottom: 20px;
     padding-top: 20px;
-    height: auto;
-    width: 500px;
+    height: 900px;
+    width: 400px;
+    border-radius: 75px;
 }
 
 /*CSS CONTACTO*/
