@@ -20,34 +20,35 @@ body {
 
 /*HEADER INICIO*/ 
 
-div.grilla header {
+div.grilla header{
     grid-area: header;
     background-color:rgb(1, 116, 192);
 }
 
-header nav.navbar navbar-expand-lg navbar-light bg-light {
+header nav ul {
+    list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-header nav {
+header nav ul li a {
     text-decoration: none;
     color:rgb(255, 255, 255); 
     font-size: 20px;
     font-weight: 400;
 }
 
-header nav.navbar navbar-expand-lg navbar-light bg-light ul li a {
+header nav ul li a img {
     height: 60px;
     width: 60px;
 }
 
-header nav.navbarnavbar-expand-lg navbar-light bg-light a i {
+header nav ul li a i {
     font-size: 45px;
     color:rgb(255, 255, 255); 
-    display: flex;
 }
+
 
 /*FOOTER*/
 
@@ -134,6 +135,11 @@ main.main_sn img {
     padding: 15px;
 }
 
+div.principal {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 div.principal p {
     
     font-size: 20px;
@@ -172,6 +178,11 @@ section.articulos div img:hover{
     width: 300px;
 }
 
+div.productos {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 main.main_productos div.productos button {
     color: rgb(1, 116, 192); 
     border-radius: 10%;
@@ -200,14 +211,22 @@ section.articulos {
     width: 100%;
 }
 
-section.articulos div.indumentaria {
+section.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+section.fotos div.card {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
 }
 
-section.articulos div.instrumentos {
+section.fotos div.card  {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -243,12 +262,7 @@ main section.contacto {
     height: 400px;
 }
 
-main section.contacto div.datos div {
-    padding-bottom: 30px;
-    width: 100%;
-}
-
-main section.contacto div.datos form {
+main section.contacto form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,11 +274,13 @@ main section.contacto div.datos form {
 main section.contacto button.azul {
     background-color: rgb(1, 116, 192); 
     color: white;
-    border-radius: 5%;
+    border-radius: 50%;
     border-style: none;
-    width: 100px;
+    width: auto;
     height: 50px;
     font-weight: 400;
+    justify-content: center;
+    align-items: center;
 } 
 
 
