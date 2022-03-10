@@ -1,312 +1,79 @@
-*{
-    box-sizing: border-box;
-}
+header {
+  align-items: center;
+  background-color: #f4f7f8;
+  display: flex;
+  grid-area: header;
+  justify-content: space-between; }
+  header img {
+    padding-left: 20px;
+    padding-top: 20px; }
+  header nav {
+    padding-left: 100px;
+    width: 60%; }
+    header nav ul {
+      list-style-type: none;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 20px; }
+    header nav a {
+      text-decoration: none;
+      color: #0174c0;
+      font-size: 20px;
+      font-weight: 400; }
+      header nav a i {
+        font-size: 45px;
+        color: #0174c0; }
+      header nav a :hover {
+        color: goldenrod; }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.grilla{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 10px;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer"
-}
-
-/*HEADER INICIO*/ 
-
-div.grilla header{
-    grid-area: header;
-    background-color:rgb(1, 116, 192);
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color:rgb(255, 255, 255); 
-    font-size: 20px;
-    font-weight: 400;
-}
-
-header nav ul li a img {
-    height: 60px;
-    width: 60px;
-}
-
-header nav ul li a i {
-    font-size: 45px;
-    color:rgb(255, 255, 255); 
-}
-
-
-/*FOOTER*/
-
-footer{
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    background-color: rgb(1, 116, 192); ;
-}
-
-footer div.redes {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 300px;
-}
-
-footer div.redes span i {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-}
-
-footer img {
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: white; }
+  footer img {
     top: 5px;
     left: 5px;
-    height: 60px;
-    width: 60px;
-}
+    height: 100px;
+    width: 100px; }
+  footer div.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px; }
+    footer div.redes :hover {
+      color: goldenrod; }
+  footer i {
+    font-size: 50px;
+    color: #0174c0; }
 
-footer span {
-    color: rgb(0, 121, 121);
-    font-size: 20px;
-}
-
-/*MAIN INICIO*/
-
-div.grilla main{
-    grid-area: main;
-}
-
-main h1 {
-    font-size: 40px;
+main.inicio {
+  grid-area: main; }
+  main.inicio h1 {
+    font-size: 35px;
     font-weight: 700;
     font-style: italic;
-    color: rgb(1, 1, 146);
-    text-align: left;
-}
-
-main.inicio div.principal {
-    display: flex; 
+    color: #0023c0;
+    padding-left: 20px;
+    padding-top: 50px;
+    text-align: left; }
+  main.inicio div.principal {
+    display: flex;
     align-items: center;
-}
-
-main.inicio p {
-    color: white;
-    background-color:rgb(1, 192, 192);
-    font-size: 20px;
-    padding: 15px;
-}
-
-main.inicio div.principal img {
+    background-image: radial-gradient(#f4f7f8);
+    padding-bottom: 40px; }
+  main.inicio img {
     border-radius: 15px;
-}
-
-/*MAIN SOBRE NOSOTROS*/
-
-main.main_sn h1 {
-    font-size: 40px;
-    font-weight: 700;
-    font-style: italic;
-    color: rgb(1, 1, 146);
-    text-align: left;
-}
-
-main.main_sn div.principal {
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(95, 95, 95));
-}
-
-main.main_sn img {
-    padding: 15px;
-}
-
-div.principal {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-div.principal p {
-    
-    font-size: 20px;
-    padding: 15px;
-    color: black;
-}
-
-/*MAIN PRODUCTOS*/
-
-main.main_productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main.main_productos h1 {
-    font-size: 40px;
-    font-weight: 700;
-    font-style: italic;
-    color: rgb(1, 1, 146);
-    text-align: center;
-}
-
-.main_productos div.productos {
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-section.articulos div img {
-    transition: height 2s, width 2s;
-}
-
-section.articulos div img:hover{
-    height: auto; 
-    width: 300px;
-}
-
-div.productos {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-main.main_productos div.productos button {
-    color: rgb(1, 116, 192); 
-    border-radius: 10%;
-    border-style: none;
-    width: 25px;
-    height: 25px;
-    font-size: 25px;
-}
-
-main.main_productos div.productos form {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-main.main_productos div.productos span i {
-    font-size: 25px;
-    color: rgb(1, 116, 192); 
-    padding: 0px 25px 0px 25px;
-}
-
-section.articulos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 100%;
-}
-
-section.fotos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    padding-bottom: 50px;
-}
-
-section.fotos div.card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-
-section.fotos div.card  {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-
-/*CSS NOTICIAS*/
-
-main.noticias section {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
-    padding-top: 20px;
-}
-
-main.noticias section img {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    height: 900px;
-    width: 400px;
-    border-radius: 75px;
-}
-
-/*CSS CONTACTO*/
-
-main section.contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 400px;
-}
-
-main section.contacto form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color: rgb(1, 1, 146);
-    width: 100%;
-}
-
-main section.contacto button.azul {
-    background-color: rgb(1, 116, 192); 
-    color: white;
-    border-radius: 50%;
-    border-style: none;
-    width: auto;
-    height: 50px;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-} 
-
-
-@media (max-width: 764px) {
-
-    main h1 {
-        text-align: center;
-        }
-    
-    main .principal {
-        display: flex;
-        flex-direction: column;
-        }
-    
-    main.main_sn div.principal img {
-        width: 100%;
-        }
-
-    section.articulos {
-        padding-top: 30px;
-    }
-
-    main.noticias section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        }
-    }
+    padding-left: 20px; }
+  main.inicio div.texto {
+    width: 25%;
+    height: 100%;
+    padding-left: 25px; }
+    main.inicio div.texto p {
+      color: #0174c0;
+      font-size: 20px;
+      text-align: center; }
