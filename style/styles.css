@@ -21,32 +21,40 @@ body {
 /*HEADER INICIO*/ 
 
 div.grilla header{
+    align-items: center;
+    background-color: rgb(244, 247, 248);
+    display: flex;
     grid-area: header;
-    background-color:rgb(1, 116, 192);
+    justify-content: space-between;
 }
 
-header nav ul {
+div.grilla header span a img{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+div.grilla header nav{
+    padding-left: 100px;
+    width: 60%;
+}
+div.grilla header nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-top: 20px;
 }
 
-header nav ul li a {
+div.grilla header nav ul li a {
     text-decoration: none;
-    color:rgb(255, 255, 255); 
+    color:rgb(1, 116, 192); 
     font-size: 20px;
     font-weight: 400;
 }
 
-header nav ul li a img {
-    height: 60px;
-    width: 60px;
-}
-
-header nav ul li a i {
+div.grilla header nav ul li a i {
     font-size: 45px;
-    color:rgb(255, 255, 255); 
+    color: rgb(1, 116, 192); 
 }
 
 
@@ -57,8 +65,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-    background-color: rgb(1, 116, 192); ;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
 }
 
 footer div.redes {
@@ -67,23 +75,23 @@ footer div.redes {
     justify-content: space-around;
     width: 300px;
 }
+footer div.redes:hover{
+    color: goldenrod;
+
+}
 
 footer div.redes span i {
     font-size: 50px;
-    color: rgb(255, 255, 255);
+    color: rgb(1, 116, 192)
 }
 
 footer img {
     top: 5px;
     left: 5px;
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
 }
 
-footer span {
-    color: rgb(0, 121, 121);
-    font-size: 20px;
-}
 
 /*MAIN INICIO*/
 
@@ -92,27 +100,37 @@ div.grilla main{
 }
 
 main h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     font-style: italic;
-    color: rgb(1, 1, 146);
+    color: rgb(6, 120, 250);
+    padding-left: 20px;
+    padding-top: 50px;
     text-align: left;
 }
 
 main.inicio div.principal {
-    display: flex; 
+    display: flex;
     align-items: center;
+    background-image: radial-gradient(rgb(244, 247, 248));
+    padding-bottom: 40px;
 }
 
-main.inicio p {
-    color: white;
-    background-color:rgb(1, 192, 192);
+div.principal div.texto{
+    width: 25%;
+    height: 100%;
+    padding-left: 25px;
+}
+
+div.principal div.texto p {
+    color:rgb(1, 116, 192);
     font-size: 20px;
-    padding: 15px;
+    text-align: center;
 }
 
 main.inicio div.principal img {
     border-radius: 15px;
+    padding-left: 20px;
 }
 
 /*MAIN SOBRE NOSOTROS*/
@@ -128,7 +146,6 @@ main.main_sn h1 {
 main.main_sn div.principal {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(95, 95, 95));
 }
 
 main.main_sn img {
@@ -141,7 +158,6 @@ div.principal {
 }
 
 div.principal p {
-    
     font-size: 20px;
     padding: 15px;
     color: black;
@@ -255,26 +271,24 @@ main.noticias section img {
 /*CSS CONTACTO*/
 
 main section.contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     height: 400px;
 }
 
 main section.contacto form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color: rgb(1, 1, 146);
-    width: 100%;
+    color: rgb(26, 26, 121);
+    padding-left: 20px;
+    width: 70%;
+}
+
+input {
+    border: 1px rgb(1, 116, 192); 
+    border-radius: 5px;
 }
 
 main section.contacto button.azul {
     background-color: rgb(1, 116, 192); 
     color: white;
-    border-radius: 50%;
+    border-radius: 40%;
     border-style: none;
     width: auto;
     height: 50px;
@@ -310,3 +324,4 @@ main section.contacto button.azul {
         align-items: center;
         }
     }
+
