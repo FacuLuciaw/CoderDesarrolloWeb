@@ -28,6 +28,7 @@ header {
       header nav a :hover {
         color: goldenrod; }
 
+<<<<<<< HEAD
 footer {
   grid-area: footer;
   display: flex;
@@ -77,3 +78,328 @@ main.inicio {
       color: #0174c0;
       font-size: 20px;
       text-align: center; }
+=======
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+}
+
+/*HEADER INICIO*/ 
+
+div.grilla header{
+    align-items: center;
+    background-color: rgb(244, 247, 248);
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+}
+
+div.grilla header span a img{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+div.grilla header nav{
+    padding-left: 100px;
+    width: 60%;
+}
+div.grilla header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+div.grilla header nav ul li a {
+    text-decoration: none;
+    color:rgb(1, 116, 192); 
+    font-size: 20px;
+    font-weight: 400;
+}
+
+div.grilla header nav ul li a i {
+    font-size: 45px;
+    color: rgb(1, 116, 192); 
+}
+
+
+/*FOOTER*/
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+footer div.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+footer div.redes:hover{
+    color: goldenrod;
+
+}
+
+footer div.redes span i {
+    font-size: 50px;
+    color: rgb(1, 116, 192)
+}
+
+footer img {
+    top: 5px;
+    left: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+
+/*MAIN INICIO*/
+
+div.grilla main{
+    grid-area: main;
+}
+
+main h1 {
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(6, 120, 250);
+    padding-left: 20px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+main.inicio div.principal {
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(rgb(244, 247, 248));
+    padding-bottom: 40px;
+}
+
+div.principal div.texto{
+    width: 25%;
+    height: 100%;
+    padding-left: 25px;
+}
+
+div.principal div.texto p {
+    color:rgb(1, 116, 192);
+    font-size: 20px;
+    text-align: center;
+}
+
+main.inicio div.principal img {
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+/*MAIN SOBRE NOSOTROS*/
+
+main.main_sn h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(1, 1, 146);
+    text-align: left;
+}
+
+main.main_sn div.principal {
+    display: flex;
+    align-items: center;
+}
+
+main.main_sn img {
+    padding: 15px;
+}
+
+div.principal {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+div.principal p {
+    font-size: 20px;
+    padding: 15px;
+    color: black;
+}
+
+/*MAIN PRODUCTOS*/
+
+main.main_productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.main_productos h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(1, 1, 146);
+    text-align: center;
+}
+
+.main_productos div.productos {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section.articulos div img {
+    transition: height 2s, width 2s;
+}
+
+section.articulos div img:hover{
+    height: auto; 
+    width: 300px;
+}
+
+div.productos {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+main.main_productos div.productos button {
+    color: rgb(1, 116, 192); 
+    border-radius: 10%;
+    border-style: none;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+}
+
+main.main_productos div.productos form {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main.main_productos div.productos span i {
+    font-size: 25px;
+    color: rgb(1, 116, 192); 
+    padding: 0px 25px 0px 25px;
+}
+
+section.articulos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+section.fotos div.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section.fotos div.card  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+/*CSS NOTICIAS*/
+
+main.noticias section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+main.noticias section img {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 900px;
+    width: 400px;
+    border-radius: 75px;
+}
+
+/*CSS CONTACTO*/
+
+main section.contacto {
+    height: 400px;
+}
+
+main section.contacto form {
+    color: rgb(26, 26, 121);
+    padding-left: 20px;
+    width: 70%;
+}
+
+input {
+    border: 1px rgb(1, 116, 192); 
+    border-radius: 5px;
+}
+
+main section.contacto button.azul {
+    background-color: rgb(1, 116, 192); 
+    color: white;
+    border-radius: 40%;
+    border-style: none;
+    width: auto;
+    height: 50px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+@media (max-width: 764px) {
+
+    main h1 {
+        text-align: center;
+        }
+    
+    main .principal {
+        display: flex;
+        flex-direction: column;
+        }
+    
+    main.main_sn div.principal img {
+        width: 100%;
+        }
+
+    section.articulos {
+        padding-top: 30px;
+    }
+
+    main.noticias section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+>>>>>>> 5c31489453663e77bbab2677d080b92e299e78aa
